@@ -1,0 +1,60 @@
+## This file is a PO Template file.
+##
+## `msgid`s here are often extracted from source code.
+## Add new translations manually only if they're dynamic
+## translations that can't be statically extracted.
+##
+## Run `mix gettext.extract` to bring this file up to
+## date. Leave `msgstr`s empty as changing them here as no
+## effect: edit them in PO (`.po`) files instead.
+msgid ""
+msgstr ""
+"Language: INSERT LANGUAGE HERE\n"
+
+#: web/templates/layout/app.html.eex:24
+msgid "Contact"
+msgstr ""
+
+#: web/templates/layout/app.html.eex:23 web/templates/page/index.html.eex:8
+msgid "Projects"
+msgstr ""
+
+#: web/templates/layout/app.html.eex:53
+msgid "Or simply leave me a message here."
+msgstr ""
+
+#: web/templates/layout/app.html.eex:44
+msgid "Places you can find me"
+msgstr ""
+
+#: web/templates/layout/app.html.eex:22 web/templates/page/index.html.eex:2
+msgid "About me"
+msgstr ""
+
+#: web/templates/layout/app.html.eex:25
+msgid "Resume (pdf)"
+msgstr ""
+
+#: web/templates/page/index.html.eex:12
+msgid "A small marketplace with invitation system"
+msgstr ""
+
+#: web/templates/page/index.html.eex:21
+msgid "Also most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future."
+msgstr ""
+
+#: web/templates/page/index.html.eex:16
+msgid "And others which you can find on"
+msgstr ""
+
+#: web/templates/page/index.html.eex:4
+msgid "I'm Boris Gnezdilov, software developer, currently a computer science (speciality - informatics) student at Assumption University of Thailand. I'm passionate about writing code for apps and web-sites backends, well defined software architecture and usability of my products. I use Go, Elixir and Phoenix framework and other common technologies like CSS, HTML, etc. in my work. I love exploring new technologies as well as studying 'old', time-tested solutions."
+msgstr ""
+
+#: web/templates/page/index.html.eex:13
+msgid "My personal full-featured blog engine"
+msgstr ""
+
+#: web/templates/page/index.html.eex:9
+msgid "Some projects I'm working on or taking a part of"
+msgstr ""

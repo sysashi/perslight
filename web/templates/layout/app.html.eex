@@ -7,29 +7,53 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello PL!</title>
+    <title>Sysashi's personal web page ~(0_0)~</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+    <header class="header">
+      <div class="content">
+        <div class="flex-row-wrapper flex-header">
+          <div class="logo">
+            <img src="/images/sysashi-logo.png" alt="my logo">
+          </div>
+          <ul class="nav">
+            <li><a href="#about"><%= gettext "About me" %></a></li>
+            <li><a href="#projects"><%= gettext "Projects" %></a></li>
+            <li><a href="#contact"><%= gettext "Contact" %></a></li>
+            <li><a href="#"><%= gettext "Resume (pdf)" %></a></li>
           </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+          <div class="languages">
+            <a href="#">EN</a>
+            <a href="#">RU</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <main role="main">
+    <main role="main">
+      <div class="content">
         <%= render @view_module, @view_template, assigns %>
-      </main>
+      </div>
+    </main>
 
-    </div> <!-- /container -->
+    <footer>
+      <div class="content flex-row-wrapper">
+        <div class="flex-footer" id="contact">
+          <span><%= gettext "Places you can find me" %></span>
+          <div>
+          <a href="https://twitter.com/sysashi" class="social"><span class="icon-twitter"></span></a>
+          <a href="https://github.com/sysashi" class="social"><span class="icon-github"></span></a>
+          <a href="https://gitlab.com/q1t" class="social"><span class="icon-gitlab"></span></a>
+          <a href="https://www.linkedin.com/in/boris-gnezdilov-723a5674" class="social"><span class="icon-linkedin"></span></a>
+          <a href="https://telegram.me/sysashi" class="social"><span class="icon-telegram"></span></a>
+          </div>
+          <div id="email">Email: sysashi.boris [at] gmail.com </div> 
+          <div class="onsite-message"><a href="#"><%= gettext "Or simply leave me a message here." %></a></div>
+        </div>
+      </div>
+    </footer>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

@@ -10,6 +10,9 @@ config :perslight,
   namespace: PL,
   ecto_repos: [PL.Repo]
 
+# Config gettext
+config :perslight, PL.Gettext, default_locale: "ru"
+
 # Configures the endpoint
 config :perslight, PL.Endpoint,
   url: [host: "localhost"],

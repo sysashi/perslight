@@ -49,21 +49,27 @@ exports.config = {
     public: "priv/static"
   },
 
-  // Configure your plugins
-  plugins: {
-    babel: {
-      // Do not use ES6 compiler in vendor code
-      ignore: [/web\/static\/vendor/]
-    }
-  },
-
   modules: {
     autoRequire: {
       "js/app.js": ["web/static/js/app"]
     }
   },
 
+  // Configure your plugins
+  plugins: {
+    babel: {
+      // Do not use ES6 compiler in vendor code
+      ignore: [/web\/static\/vendor/]
+    },
+    postcss: {
+        processors: [require("postcss-cssnext")]
+    }
+  },
+
   npm: {
-    enabled: true
+    enabled: true,
+    styles: {
+        "normalize.css": ["normalize.css"]
+    }
   }
 };

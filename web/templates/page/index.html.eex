@@ -1,36 +1,23 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+  <div id="about">
+    <h1><%= gettext "About me" %></h1>
+    <p><img id="my-picture" src="http://lorempixel.com/150/150/people/">
+    <%= gettext "I'm Boris Gnezdilov, software developer, currently a computer science (speciality - informatics) student at Assumption University of Thailand. I'm passionate about writing code for apps and web-sites backends, well defined software architecture and usability of my products. I use Go, Elixir and Phoenix framework and other common technologies like CSS, HTML, etc. in my work. I love exploring new technologies as well as studying 'old', time-tested solutions." %>
+    </p>
   </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
+  <div id="projects">
+    <h1><%= gettext "Projects" %></h1>
+    <em class="small-text"><%= gettext "Some projects I'm working on or taking a part of" %>..</em>
+    <p>
     <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
+      <li> <a href="https://github.com/sysashi/tinyfair"> TinyFair </a> - <span class="about"> <%= gettext "A small marketplace with invitation system" %> </span></li>
+      <li> <a href="https://github.com/sysahsi/pers"> Pers </a> - <span class="about"> <%= gettext "My personal full-featured blog engine" %> </span></li>
     </ul>
+    <div> 
+      <span> <%= gettext "And others which you can find on" %></span>
+      <a href="https://github.com/sysashi"> Github (new) </a>,
+      <a href="https://gitlab.com/q1t">Gitlab</a>,
+      <a href="https://github.com/q1t"> Github (old) </a>
+    </div>
+    <span class="small-text" id="disclamer"> <%= gettext "Also most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future." %>
+    </p>
   </div>
-</div>
