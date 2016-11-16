@@ -1,6 +1,6 @@
   <div id="about">
     <h1><%= gettext "About me" %></h1>
-    <p><img id="my-picture" src="http://lorempixel.com/150/150/people/">
+    <p><img id="my-picture" src="/images/me.jpeg">
     <%= gettext "I'm Boris Gnezdilov, software developer, currently a computer science (speciality - informatics) student at Assumption University of Thailand. I'm passionate about writing code for apps and web-sites backends, well defined software architecture and usability of my products. I use Go, Elixir and Phoenix framework and other common technologies like CSS, HTML, etc. in my work. I love exploring new technologies as well as studying 'old', time-tested solutions." %>
     </p>
   </div>

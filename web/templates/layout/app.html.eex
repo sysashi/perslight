@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sysashi's personal web page ~(0_0)~</title>
+    <title>Sysashi's personal web page</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
@@ -16,17 +17,19 @@
       <div class="content">
         <div class="flex-row-wrapper flex-header">
           <div class="logo">
-            <img src="/images/sysashi-logo.png" alt="my logo">
+          <%= link to: page_path(@conn, :index) do %>
+              <img src="/images/logo.png" data-rjs="3" alt="my logo">
+          <% end %>
           </div>
           <ul class="nav">
-            <li><a href="#about"><%= gettext "About me" %></a></li>
-            <li><a href="#projects"><%= gettext "Projects" %></a></li>
-            <li><a href="#contact"><%= gettext "Contact" %></a></li>
-            <li><a href="#"><%= gettext "Resume (pdf)" %></a></li>
+              <li><%= link to: resume_link(current_locale()), target: "_blank" do %>
+                  <%= gettext "Resume (pdf)" %>
+                  <% end %>
+              </li>
           </ul>
           <div class="languages">
-            <a href="#">EN</a>
-            <a href="#">RU</a>
+            <%= link "EN", to: page_path(@conn, :set_locale, locale: "en") %>
+            <%= link "RU", to: page_path(@conn, :set_locale, locale: "ru") %>
           </div>
         </div>
       </div>
@@ -50,7 +53,7 @@
           <a href="https://telegram.me/sysashi" class="social"><span class="icon-telegram"></span></a>
           </div>
           <div id="email">Email: sysashi.boris [at] gmail.com </div> 
-          <div class="onsite-message"><a href="#"><%= gettext "Or simply leave me a message here." %></a></div>
+          <div class="onsite-message"><%= link gettext("Or simply leave me a message here."), to: message_path(@conn, :new) %></a></div>
         </div>
       </div>
     </footer>

@@ -1,0 +1,4 @@
+<div id="message-success">
+    <p> <%= gettext "Thank you for your message, I will respond as soon as I get it" %>.</p>
+    <%= link gettext("Get back to home page"), to: page_path(@conn, :index) %>
+</div>

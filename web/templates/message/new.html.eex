@@ -1,0 +1,11 @@
+<div id="message">
+    <%= form_for @conn, message_path(@conn, :create), [as: :message], fn f-> %>
+        <h1> <%= gettext "Leave a message" %> </h1>
+        <p> <%= gettext "Please include your contact details so I can respond you immediately" %>.</p>
+      <%= textarea f, :message_body, placeholder: gettext("Message") %>
+      <div class="flex-row-wrapper" id="submit-message">
+        <div class="g-recaptcha" id="recaptcha" data-sitekey="6Lf85gsUAAAAAHy0cG3VzI9gBhJj6zLUIPJfYjIR"></div>
+        <%= submit gettext "Send" %>
+      </div>
+    <% end %>
+</div>

@@ -19,28 +19,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
 
-#: web/templates/layout/app.html.eex:24
+#: web/templates/layout/app.html.eex:26
 msgid "Contact"
 msgstr ""
 
-#: web/templates/layout/app.html.eex:23 web/templates/page/index.html.eex:8
+#: web/templates/layout/app.html.eex:25 web/templates/page/index.html.eex:8
 msgid "Projects"
 msgstr ""
 
-#: web/templates/layout/app.html.eex:53
+#: web/templates/layout/app.html.eex:55
 msgid "Or simply leave me a message here."
 msgstr ""
 
-#: web/templates/layout/app.html.eex:44
+#: web/templates/layout/app.html.eex:46
 msgid "Places you can find me"
 msgstr ""
 
-#: web/templates/layout/app.html.eex:22 web/templates/page/index.html.eex:2
+#: web/templates/layout/app.html.eex:24 web/templates/page/index.html.eex:2
 msgid "About me"
 msgstr ""
 
-#, fuzzy
-#: web/templates/layout/app.html.eex:25
+#: web/templates/layout/app.html.eex:27
 msgid "Resume (pdf)"
 msgstr ""
 
@@ -66,4 +65,28 @@ msgstr ""
 
 #: web/templates/page/index.html.eex:9
 msgid "Some projects I'm working on or taking a part of"
+msgstr ""
+
+#: web/templates/message/new.html.eex:3
+msgid "Leave a message"
+msgstr ""
+
+#: web/templates/message/new.html.eex:5
+msgid "Message"
+msgstr ""
+
+#: web/templates/message/new.html.eex:4
+msgid "Please include your contact details so I can respond you immediately"
+msgstr ""
+
+#: web/templates/message/new.html.eex:6
+msgid "Send"
+msgstr ""
+
+#: web/templates/message/success.html.eex:3
+msgid "Get back to home page"
+msgstr ""
+
+#: web/templates/message/success.html.eex:2
+msgid "Thank you for your message, I will respond as soon as I get it"
 msgstr ""

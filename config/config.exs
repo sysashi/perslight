@@ -11,7 +11,7 @@ config :perslight,
   ecto_repos: [PL.Repo]
 
 # Config gettext
-config :perslight, PL.Gettext, default_locale: "ru"
+config :perslight, PL.Gettext, default_locale: "en"
 
 # Configures the endpoint
 config :perslight, PL.Endpoint,
@@ -29,3 +29,4 @@ config :logger, :console,
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
+import_config "prod.secret.exs"
