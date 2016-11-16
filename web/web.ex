@@ -18,11 +18,7 @@ defmodule PL.Web do
 
   def model do
     quote do
-      use Ecto.Schema
 
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
     end
   end
 
@@ -30,9 +26,6 @@ defmodule PL.Web do
     quote do
       use Phoenix.Controller, namespace: PL
 
-      alias PL.Repo
-      import Ecto
-      import Ecto.Query
 
       import PL.Router.Helpers
       import PL.Gettext
@@ -65,9 +58,6 @@ defmodule PL.Web do
     quote do
       use Phoenix.Channel
 
-      alias PL.Repo
-      import Ecto
-      import Ecto.Query
       import PL.Gettext
     end
   end

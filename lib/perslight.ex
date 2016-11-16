@@ -9,7 +9,7 @@ defmodule PL do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      supervisor(PL.Repo, []),
+      # supervisor(PL.Repo, []),
       # Start the endpoint when the application starts
       supervisor(PL.Endpoint, []),
       # Start your own worker by calling: PL.Worker.start_link(arg1, arg2, arg3)

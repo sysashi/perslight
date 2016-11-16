@@ -1,3 +1,3 @@
-defmodule PL.Repo do
-  use Ecto.Repo, otp_app: :perslight
-end
+# defmodule PL.Repo do
+# use Ecto.Repo, otp_app: :perslight
+# end
