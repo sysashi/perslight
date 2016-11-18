@@ -31,7 +31,7 @@ defmodule PL.PageController do
     end
   end
 
-  defp origin_referer(conn) do
+  def origin_referer(conn) do
     server_url = PL.Endpoint.url()
     referer = get_req_header(conn, "referer") |> List.first
     if referer && String.starts_with?(referer, server_url) do

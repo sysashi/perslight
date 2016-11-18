@@ -223,6 +223,29 @@ footer .social {
     text-align: center;
 }
 
+/* error page */
+.error {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #DDD;
+    padding: 20px;
+}
+
+.error span, .error a {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.error a {
+    text-decoration: none;
+    color: #519ab2;
+    font-style: italic;
+}
+
 /* fonts */
 @font-face {
   font-family: 'icomoon';
