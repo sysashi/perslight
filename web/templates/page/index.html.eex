@@ -6,18 +6,13 @@
   </div>
   <div id="projects">
     <h1><%= gettext "Projects" %></h1>
-    <em class="small-text"><%= gettext "Some projects I'm working on or taking a part of" %>..</em>
+    <span> <%= gettext "Most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future." %>
     <p>
-    <ul>
-      <li> <a href="https://github.com/sysashi/tinyfair"> TinyFair </a> - <span class="about"> <%= gettext "A small marketplace with invitation system" %> </span></li>
-      <li> <a href="https://github.com/sysahsi/pers"> Pers </a> - <span class="about"> <%= gettext "My personal full-featured blog engine" %> </span></li>
-    </ul>
     <div> 
-      <span> <%= gettext "And others which you can find on" %></span>
+      <span> <%= gettext "You can find all my projects on" %></span>
       <a href="https://github.com/sysashi"> Github (new) </a>,
       <a href="https://gitlab.com/q1t">Gitlab</a>,
       <a href="https://github.com/q1t"> Github (old) </a>
     </div>
-    <span class="small-text" id="disclamer"> <%= gettext "Also most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future." %>
     </p>
   </div>

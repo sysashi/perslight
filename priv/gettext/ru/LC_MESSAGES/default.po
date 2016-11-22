@@ -19,11 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
 
-#: web/templates/layout/app.html.eex:26
-msgid "Contact"
-msgstr "Контакты"
-
-#: web/templates/layout/app.html.eex:25 web/templates/page/index.html.eex:8
+#: web/templates/page/index.html.eex:8
 msgid "Projects"
 msgstr "Проекты"
 
@@ -35,37 +31,17 @@ msgstr "Или же просто оставьте ваше сообщение з
 msgid "Places you can find me"
 msgstr "Места где можно меня найти"
 
-#: web/templates/layout/app.html.eex:24 web/templates/page/index.html.eex:2
+#: web/templates/page/index.html.eex:2
 msgid "About me"
 msgstr "Обо мне"
 
-#: web/templates/layout/app.html.eex:27
+#: web/templates/layout/app.html.eex:25
 msgid "Resume (pdf)"
 msgstr "Резюме (pdf)"
-
-#: web/templates/page/index.html.eex:12
-msgid "A small marketplace with invitation system"
-msgstr "Небольшая торговая площадка с системой инвайтов"
-
-#: web/templates/page/index.html.eex:21
-msgid "Also most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future."
-msgstr "Так же большинство свой карьеры программиста я работал с частными заказчиками выполняя работу над закрытым кодом. Надеюсь у меня будет возможность выложить эти проекты в открытый доступ в скором будущем."
-
-#: web/templates/page/index.html.eex:16
-msgid "And others which you can find on"
-msgstr "Остальные вы сможете найти на"
 
 #: web/templates/page/index.html.eex:4
 msgid "I'm Boris Gnezdilov, software developer, currently a computer science (speciality - informatics) student at Assumption University of Thailand. I'm passionate about writing code for apps and web-sites backends, well defined software architecture and usability of my products. I use Go, Elixir and Phoenix framework and other common technologies like CSS, HTML, etc. in my work. I love exploring new technologies as well as studying 'old', time-tested solutions."
 msgstr "Меня зовут Борис Гнездилов, программист, в настоящее время студент факультета компьютерных наук (специальность - информатика) университета Assumption University of Thailand. Я увлекаюсь написанием серверного кода для приложений и веб-сайтов, проработкой архитектуры ПО и удобства использования своих продуктов. Я использую Go, Elixir с Phoenix framework и другие распространенные технологии такие как CSS, HTML и Javascript в свой работе. Так же я люблю знакомится с новинками из мира программирования и изучением «старых», проверенных временем решений."
-
-#: web/templates/page/index.html.eex:13
-msgid "My personal full-featured blog engine"
-msgstr "Персональный блог"
-
-#: web/templates/page/index.html.eex:9
-msgid "Some projects I'm working on or taking a part of"
-msgstr "Некоторые из моих проектов или те в которых я принимаю участие"
 
 #: web/templates/message/new.html.eex:3
 msgid "Leave a message"
@@ -79,7 +55,7 @@ msgstr "Ваше сообщение"
 msgid "Please include your contact details so I can respond you immediately"
 msgstr "Пожалуйста укажите ваши контактные данные что бы я смог незамедлительно ответить вам"
 
-#: web/templates/message/new.html.eex:6
+#: web/templates/message/new.html.eex:8
 msgid "Send"
 msgstr "Отправить"
 
@@ -90,3 +66,11 @@ msgstr " Вернуться на домашнюю страницу"
 #: web/templates/message/success.html.eex:2
 msgid "Thank you for your message, I will respond as soon as I get it"
 msgstr "Спасибо за ваше сообщение, я отвечу вам как только его получу"
+
+#: web/templates/page/index.html.eex:9
+msgid "Most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future."
+msgstr "Большинство свой карьеры программиста я работал с частными заказчиками выполняя работу над закрытым кодом. Надеюсь у меня будет возможность выложить эти проекты в открытый доступ в скором будущем."
+
+#: web/templates/page/index.html.eex:12
+msgid "You can find all my projects on"
+msgstr "Вы можете найти все мои проекты на"

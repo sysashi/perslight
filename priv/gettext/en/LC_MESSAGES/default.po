@@ -19,11 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
 
-#: web/templates/layout/app.html.eex:26
-msgid "Contact"
-msgstr ""
-
-#: web/templates/layout/app.html.eex:25 web/templates/page/index.html.eex:8
+#: web/templates/page/index.html.eex:8
 msgid "Projects"
 msgstr ""
 
@@ -35,36 +31,16 @@ msgstr ""
 msgid "Places you can find me"
 msgstr ""
 
-#: web/templates/layout/app.html.eex:24 web/templates/page/index.html.eex:2
+#: web/templates/page/index.html.eex:2
 msgid "About me"
 msgstr ""
 
-#: web/templates/layout/app.html.eex:27
+#: web/templates/layout/app.html.eex:25
 msgid "Resume (pdf)"
-msgstr ""
-
-#: web/templates/page/index.html.eex:12
-msgid "A small marketplace with invitation system"
-msgstr ""
-
-#: web/templates/page/index.html.eex:21
-msgid "Also most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future."
-msgstr ""
-
-#: web/templates/page/index.html.eex:16
-msgid "And others which you can find on"
 msgstr ""
 
 #: web/templates/page/index.html.eex:4
 msgid "I'm Boris Gnezdilov, software developer, currently a computer science (speciality - informatics) student at Assumption University of Thailand. I'm passionate about writing code for apps and web-sites backends, well defined software architecture and usability of my products. I use Go, Elixir and Phoenix framework and other common technologies like CSS, HTML, etc. in my work. I love exploring new technologies as well as studying 'old', time-tested solutions."
-msgstr ""
-
-#: web/templates/page/index.html.eex:13
-msgid "My personal full-featured blog engine"
-msgstr ""
-
-#: web/templates/page/index.html.eex:9
-msgid "Some projects I'm working on or taking a part of"
 msgstr ""
 
 #: web/templates/message/new.html.eex:3
@@ -79,7 +55,7 @@ msgstr ""
 msgid "Please include your contact details so I can respond you immediately"
 msgstr ""
 
-#: web/templates/message/new.html.eex:6
+#: web/templates/message/new.html.eex:8
 msgid "Send"
 msgstr ""
 
@@ -89,4 +65,13 @@ msgstr ""
 
 #: web/templates/message/success.html.eex:2
 msgid "Thank you for your message, I will respond as soon as I get it"
+msgstr ""
+
+#, fuzzy
+#: web/templates/page/index.html.eex:9
+msgid "Most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future."
+msgstr ""
+
+#: web/templates/page/index.html.eex:12
+msgid "You can find all my projects on"
 msgstr ""
