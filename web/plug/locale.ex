@@ -3,11 +3,12 @@ defmodule PL.Plug.Locale do
 
   def init(opts), do: opts
 
-  def call(conn, opts) do
+  # FIXME
+  def call(conn, _opts) do
     cond do
       l = locale_from_session(conn) -> set_locale(l)
-      l = locale_from_params(conn.params) -> set_locale(l)
-      [l | _] = locale_from_header(conn) -> set_locale(l)
+      l = locale_from_params(conn) -> set_locale(l)
+      l = locale_from_header(conn) -> set_locale(l)
       false -> set_locale("en")
     end
     conn
@@ -28,14 +29,22 @@ defmodule PL.Plug.Locale do
     |> Enum.filter(fn l -> l in available_locales() end)
   end
 
-  defp locale_from_params(params) do
-    if locale = params["locale"] do
+  defp locale_from_params(conn) do
+    if locale = conn.params["locale"] do
       locale
     end
   end
 
-  # FIXME, not pure enough :_:
-  defp set_locale(l) do
+  # FIXME
+  defp set_locale([]) do
+    available_locales() |> List.first |> set_locale
+  end
+
+  defp set_locale([l | _]) do
+    set_locale(l)
+  end
+
+  defp set_locale(l) when is_binary(l) and l in ~w(en ru) do
     Gettext.put_locale(PL.Gettext, l)
   end
 
