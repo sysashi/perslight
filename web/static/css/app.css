@@ -81,6 +81,7 @@ footer {
     line-height: 2;
     height: 100%;
     width: 100%;
+    flex: 1;
     padding: 20px 0;
     background: #222;
     border-top: 2px dashed #666;
@@ -106,6 +107,13 @@ footer .social {
     @media (--wide) {
         max-width: var(--defaultWidth);
         margin: 0 auto;
+    }
+}
+
+.content {
+    & h1, & h2, & h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
@@ -145,10 +153,15 @@ footer .social {
     margin-right: 1em;
     max-width: 200px;
     max-height: 200px;
+    @media (--small) {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 #projects > h1 {
-    margin-bottom: -5px;
 }
 
 #about > h1 {
