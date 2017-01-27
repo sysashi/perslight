@@ -26,3 +26,5 @@ erl_crash.dump
 /rel
 logfile
 /priv/resume/
+
+**/elm-stuff/

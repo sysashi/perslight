@@ -1,5 +1,6 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var path = require("path");
+var elmSource = __dirname + "/web/static/elm"
 
 module.exports = function () {
   return {
@@ -9,6 +10,7 @@ module.exports = function () {
       filename: "js/app.js"
     },
     resolve: {
+      extensions: ['.js', '.elm'],
       modules: ["node_modules", __dirname + "/web/static/js"]
     },
     module: {
@@ -24,15 +26,20 @@ module.exports = function () {
           test: /\.js$/,
           exclude: /node_modules/,
           use: [{
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              presets: ['es2015']
+              presets: ["es2015"]
             },
           }]
+        },
+        {
+          test: /\.elm$/,
+          exclude: [/elm-stuff/, /node_modules/],
+          loader: "elm-webpack-loader?cwd=" + elmSource
         }
       ]
     },
-    devtool: 'source-map',
+    devtool: "source-map",
     plugins: [
       new ExtractTextPlugin({
         filename: "css/app.css", 
