@@ -1,0 +1,12 @@
+<footer>
+    <div id="contacts">
+        <ul id="social-list">
+            <li><a href="https://github.com/sysashi"><span class="icon icon-github"></span></a></li>
+            <li><a href="https://gitlab.com/q1t"><span class="icon icon-gitlab"></span></a></li>
+            <li><a href="https://twitter.com/sysashi"><span class="icon icon-twitter"></span></a></li>
+            <li><a href="https://telegram.me/sysashi"><span class="icon icon-telegram"></span></a></li>
+        </ul>
+        <!-- <span> Or leave me a message <%= link "here", to: message_path(@conn, :new) %></span>
+        -->
+    </div>
+</footer>

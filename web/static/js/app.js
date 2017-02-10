@@ -20,5 +20,5 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
-const Elm = require("../elm/Main")
-Elm.Main.embed(document.getElementById("elm-main"))
+// const Elm = require("../elm/Main")
+// Elm.Main.embed(document.getElementById("elm-main"))

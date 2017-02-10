@@ -1,19 +1,14 @@
-  <div id="about">
-    <h1><%= gettext "About me" %></h1>
-    <p><img id="my-picture" src="/images/me.jpeg">
-    <%= gettext "I'm Boris Gnezdilov, software developer, currently a computer science (speciality - informatics) student at Assumption University of Thailand. I'm passionate about writing code for apps and web-sites backends, well defined software architecture and usability of my products. I use Go, Elixir and Phoenix framework and other common technologies like CSS, HTML, etc. in my work. I love exploring new technologies as well as studying 'old', time-tested solutions." %>
-    </p>
-  </div>
-  <div id="projects">
-    <h1><%= gettext "Projects" %></h1>
-    <span> <%= gettext "Most of my career I've been working with private customers doing work on proprietary code. I hope I will be able to open source some of that code in the near future." %>
-    <p>
-    <div> 
-      <span> <%= gettext "You can find all my projects on" %></span>
-      <a href="https://github.com/sysashi"> Github (new) </a>,
-      <a href="https://gitlab.com/q1t">Gitlab</a>,
-      <a href="https://github.com/q1t"> Github (old) </a>
-    </div>
-    </p>
-  </div>
-  <div id="elm-main"></div>
+<div id="about-me">
+    <img id="my-photo" src="/images/me.jpeg"/>
+    <p>Hi, my name is Boris Gnezdilov, I'm a web developer. I hope someday it would break</p>
+</div>
+
+<div id="projects">
+    <h2> Projects </h2>
+    <span> Balalala </span>
+    <ul class="">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>

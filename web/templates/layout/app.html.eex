@@ -1,69 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="sysashi's personal webpage">
-    <meta name="author" content="sysashi">
-    <title>Sysashi's personal webpage</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script>
-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-     ga('create', 'UA-40715703-3', 'auto');
-     ga('send', 'pageview');
-    </script>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="sysashi's personal webpage">
+        <meta name="author" content="sysashi">
+        <title>Sysashi's personal webpage</title>
+        <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+        <%= unless Mix.env == :dev do %>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <script>
+             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+             ga('create', 'UA-40715703-3', 'auto');
+             ga('send', 'pageview');
+            </script>
+        <% end %>
+    </head>
 
-  <body>
-    <header class="header">
-      <div class="content">
-        <div class="flex-row-wrapper flex-header">
-          <div class="logo">
-          <%= link to: page_path(@conn, :index) do %>
-              <img src="/images/logo.png" data-rjs="3" alt="my logo">
-          <% end %>
-          </div>
-          <ul class="nav">
-              <li><%= link to: resume_link(current_locale()), target: "_blank" do %>
-                  <%= gettext "Resume (pdf)" %>
-                  <% end %>
-              </li>
-          </ul>
-          <div class="languages">
-            <%= link "EN", to: page_path(@conn, :set_locale, locale: "en") %>
-            <%= link "RU", to: page_path(@conn, :set_locale, locale: "ru") %>
-          </div>
+    <body>
+        <%= render PL.LayoutView, "header.html", assigns %>
+        <div id="wrapper">
+            <main role="main">
+                <%= render @view_module, @view_template, assigns %>
+            </main>
         </div>
-      </div>
-    </header>
-
-    <main role="main">
-      <div class="content">
-        <%= render @view_module, @view_template, assigns %>
-      </div>
-    </main>
-
-    <footer>
-      <div class="content flex-row-wrapper">
-        <div class="flex-footer" id="contact">
-          <span><%= gettext "Places you can find me" %></span>
-          <div>
-          <a href="https://twitter.com/sysashi" class="social"><span class="icon-twitter"></span></a>
-          <a href="https://github.com/sysashi" class="social"><span class="icon-github"></span></a>
-          <a href="https://gitlab.com/q1t" class="social"><span class="icon-gitlab"></span></a>
-          <a href="https://www.linkedin.com/in/boris-gnezdilov-723a5674" class="social"><span class="icon-linkedin"></span></a>
-          <a href="https://telegram.me/sysashi" class="social"><span class="icon-telegram"></span></a>
-          </div>
-          <div id="email">Email: sysashi.boris [at] gmail.com </div> 
-          <div class="onsite-message"><%= link gettext("Or simply leave me a message here."), to: message_path(@conn, :new) %></a></div>
-        </div>
-      </div>
-    </footer>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-  </body>
+        <%= render PL.LayoutView, "footer.html", assigns %>
+        <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    </body>
 </html>
